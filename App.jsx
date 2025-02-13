@@ -35,7 +35,7 @@ export default function App() {
 
     try {
       const response = await fetch(
-        https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload,
+    `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,
         { method: 'POST', body: formData }
       );
       const data = await response.json();
